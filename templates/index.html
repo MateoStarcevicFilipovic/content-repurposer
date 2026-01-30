@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brightdock Content Repurposer</title>
+      <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+<body>
+      <div class="app">
+                <header class="header">
+                              <div class="header-content">
+                                                <h1>Content Repurposer</h1>
+                                              <p>Transform AI research into engaging blog posts</p>
+                              </div>div>
+                </header>header>
+              <main class="main">
+                          <aside class="sidebar">
+                                          <div class="sidebar-header">
+                                                              <h2>Research Papers</h2>
+                                                              <button id="fetchBtn" class="btn btn-primary">
+                                                                                      <span class="btn-text">Fetch New</span>span>
+                                                                                      <span class="btn-loading" style="display:none;">...</span>span>
+                                                              </button>button>
+                                          </div>div>
+                                          <div class="search-box">
+                                                              <input type="text" id="searchInput" placeholder="Search topics..." />
+                                                              <button id="searchBtn" class="btn btn-secondary">Search</button>button>
+                                          </div>div>
+                                          <div id="articlesList" class="articles-list">
+                                                              <p class="placeholder">Click "Fetch New" to discover research papers</p>
+                                          </div>div>
+                          </aside>aside>
+                          <section class="content">
+                                          <div class="tabs">
+                                                              <button class="tab active" data-tab="preview">Preview</button>button>
+                                                              <button class="tab" data-tab="drafts">Saved Drafts</button>button>
+                                          </div>div>
+                                          <div id="preview" class="tab-content active">
+                                                              <div id="articlePreview" class="article-preview">
+                                                                                      <div class="placeholder-content">
+                                                                                                                  <h3>Select a paper to preview</h3>
+                                                                                                                  <p>Choose a research paper from the sidebar to see its details.</p>
+                                                                                        </div>div>
+                                                              </div>div>
+                                          </div>div>
+                                          <div id="drafts" class="tab-content">
+                                                              <div id="draftsList" class="drafts-list">
+                                                                                      <p class="placeholder">No drafts yet. Generate one from a research paper!</p>
+                                                              </div>div>
+                                          </div>div>
+                          </section>section>
+              </main>main>
+              <div id="draftModal" class="modal" style="display:none;">
+                          <div class="modal-content">
+                                          <div class="modal-header">
+                                                              <h2>Generated Blog Draft</h2>
+                                                              <button class="modal-close" onclick="closeModal()">&times;</button>button>
+                                          </div>div>
+                                          <div class="modal-body">
+                                                              <div id="draftContent" class="draft-content"></div>div>
+                                          </div>div>
+                                          <div class="modal-footer">
+                                                              <button class="btn btn-secondary" onclick="copyDraft()">Copy to Clipboard</button>button>
+                                                              <button class="btn btn-secondary" onclick="downloadDraft()">Download .md</button>button>
+                                                              <button class="btn btn-primary" onclick="closeModal()">Close</button>button>
+                                          </div>div>
+                          </div>div>
+              </div>div>
+      </div>div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>html></p></p></h1>
+</body></title>
+  </head>
